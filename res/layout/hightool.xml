@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/titile"
+        android:text="@string/high_tool" />
+
+    <View style="@style/view_divide_line_style" />
+
+    <TextView
+        android:id="@+id/tv_atools_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/address_of_phone_number"
+        android:textColor="@color/text_on_textView"
+        android:textSize="24sp" />
+
+    <include layout="@layout/divide_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_address_of_phone_number_service"
+                android:textColor="@color/text_on_textView"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_atools_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address_of_phone_number_service"
+                android:textColor="#ff0000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_atools_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line" />
+
+    <TextView
+        android:id="@+id/tv_atools_select_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/change_show_type"
+        android:textColor="@color/text_on_textView"
+        android:textSize="24sp" />
+
+    <include layout="@layout/divide_line" />
+
+    <TextView
+        android:id="@+id/tv_atools_change_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/change_show_location"
+        android:textColor="@color/text_on_textView"
+        android:textSize="24sp" />
+
+    <include layout="@layout/divide_line" />
+
+    <TextView
+        android:id="@+id/tv_atools_sms_backup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/message_backup"
+        android:textColor="@color/text_on_textView"
+        android:textSize="24sp" />
+
+    <include layout="@layout/divide_line" />
+
+    <TextView
+        android:id="@+id/tv_atools_sms_restore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/message_recovery"
+        android:textColor="@color/text_on_textView"
+        android:textSize="24sp" />
+
+    <include layout="@layout/divide_line" />
+
+    <TextView
+        android:id="@+id/tv_atools_app_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:textColor="@color/text_on_textView"
+        android:text="@string/program_lock"
+        android:textSize="24sp" />
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_popup"
+    android:layout_width="220dip"
+    android:layout_height="50dip"
+    android:background="@drawable/local_popup_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_uninstall"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:contentDescription="@string/icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/img1" />
+
+        <TextView
+            android:layout_width="35dip"
+            android:layout_height="20dip"
+            android:text="@string/uninstall" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="50dip"
+        android:background="#ffffffff" />
+
+    <LinearLayout
+        android:id="@+id/ll_start"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:contentDescription="@string/icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/img2" />
+
+        <TextView
+            android:layout_width="35dip"
+            android:layout_height="20dip"
+            android:text="@string/start" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="50dip"
+        android:background="#ffffffff" />
+
+    <LinearLayout
+        android:id="@+id/ll_share"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:contentDescription="@string/icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/img3" />
+
+        <TextView
+            android:layout_width="35dip"
+            android:layout_height="20dip"
+            android:text="@string/share" />
+    </LinearLayout>
+
+</LinearLayout>

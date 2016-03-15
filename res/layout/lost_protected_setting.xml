@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="@string/mobile_security" />
+
+    <View style="@style/view_divide_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_safe_number"
+            android:textColor="@color/text_on_textView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_lost_protected_setting_safe_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/contact_number"
+            android:textColor="@color/text_on_textView"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/security_setting"
+            android:textColor="@color/text_on_textView"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cb_lost_protected_setting_protecting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:text="@string/security_open_already"
+            android:textColor="@color/text_on_textView"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line" />
+
+    <TextView
+        android:id="@+id/tv_lost_protected_setting_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/setting_reset"
+        android:textColor="@color/text_on_textView"
+        android:textSize="18sp" />
+
+    <include layout="@layout/divide_line" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:text="@string/order_text"
+        android:textSize="18sp" />
+</LinearLayout>

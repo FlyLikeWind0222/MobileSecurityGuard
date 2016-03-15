@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:gravity="left"
+        android:text="@string/welcome_to_use_mobile_security" />
+
+    <View style="@style/view_divide_line_style" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:text="@string/your_mobile_security_guard" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/icon_star_big_on_style"
+            android:contentDescription="@string/icon" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:text="@string/sim_card_change_alarm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/icon_star_big_on_style"
+            android:contentDescription="@string/icon" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:text="@string/gps_tracking" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/icon_star_big_on_style"
+            android:contentDescription="@string/icon" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:text="@string/long_range_remoting_data" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/icon_star_big_on_style"
+            android:contentDescription="@string/icon" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:text="@string/long_range_locking_screen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/image_start_online_style"
+            android:contentDescription="@string/icon" />
+
+        <ImageView
+            style="@style/image_start_offline_style"
+            android:contentDescription="@string/icon" />
+
+        <ImageView
+            style="@style/image_start_offline_style"
+            android:contentDescription="@string/icon" />
+
+        <ImageView
+            style="@style/image_start_offline_style"
+            android:contentDescription="@string/icon" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/icon"
+            android:src="@drawable/setup1" />
+
+        <Button
+            style="@style/button_next_style"
+            android:onClick="next" />
+    </RelativeLayout>
+
+</LinearLayout>

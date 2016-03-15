@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg">#ff006EA5</color>
+    <color name="bg_semi_transparent">#33000000</color>
+    <color name="text">#ff000000</color>
+    <color name="text_on_textView">#cfff</color>
+
+</resources>

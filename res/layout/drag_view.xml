@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:id="@+id/ll_drag_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/call_locate_white" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon5"
+            android:contentDescription="@string/the_location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/text_on_textView"
+            android:text="@string/province_and_city" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_drag_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/move_to_change_the_location"
+        android:textSize="22sp" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:gravity="left"
+        android:text="@string/set_safe_number" />
+
+    <View style="@style/view_divide_line_style" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:text="@string/if_sim_card_change" />
+
+    <EditText
+        android:id="@+id/et_safe_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_safe_number_or_select_one_please"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="select_contact"
+        android:text="@string/select_contact" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/image_start_offline_style"
+            android:contentDescription="@string/icon" />
+
+        <ImageView
+            style="@style/image_start_offline_style"
+            android:contentDescription="@string/icon" />
+
+        <ImageView
+            style="@style/image_start_online_style"
+            android:contentDescription="@string/icon" />
+
+        <ImageView
+            style="@style/image_start_offline_style"
+            android:contentDescription="@string/icon" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/icon"
+            android:src="@drawable/phone" />
+
+        <Button
+            style="@style/button_pre_style"
+            android:onClick="pre" />
+
+        <Button
+            style="@style/button_next_style"
+            android:onClick="next" />
+    </RelativeLayout>
+
+</LinearLayout>
